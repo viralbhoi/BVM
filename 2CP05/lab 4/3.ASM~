@@ -1,0 +1,15 @@
+
+;<Program title>
+
+LXI B,310EH
+LXI H,3109H
+MVI E,0AH
+
+FLAG: MOV A,M
+STAX B
+DCX B
+DCX H
+DCR E
+JNZ FLAG
+
+hlt

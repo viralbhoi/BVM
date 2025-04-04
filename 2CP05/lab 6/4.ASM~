@@ -1,0 +1,11 @@
+
+;<Program title>
+
+LXI H,2500H
+MVI D,05H
+
+OUTER: LXI H,2500H
+MOV B,M
+
+
+hlt

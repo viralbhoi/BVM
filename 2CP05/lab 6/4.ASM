@@ -1,0 +1,16 @@
+
+;<Program title>
+
+LXI H,2500H
+MVI D,05H
+
+OUTER: LXI H,2500H
+MOV B,M
+MOV E,D
+
+INNER: INX H
+CMP M
+JNC FLAG2
+
+
+hlt

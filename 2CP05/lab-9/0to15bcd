@@ -1,0 +1,21 @@
+;<Program title>
+
+xra a
+x: aci 01H
+daa
+out 00H
+CPI 15H
+jz L ; 
+call delay
+l: hlt
+jmp x
+
+delay: mvi b,2ah
+o: mvi c,0ffh
+i: dcr c
+jnz i
+dcr b
+jnz o
+ret 
+hlt
+

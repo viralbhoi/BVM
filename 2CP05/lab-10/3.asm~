@@ -1,0 +1,56 @@
+;Hello in seven segment with scroll
+
+mvi a,98h
+out 13h
+lxi h, 9100H
+again2: mvi b,0bh
+again: push h
+ mvi a,00h
+mvi c,00h
+mvi d,05h
+
+again1: mov a,c
+out 12h
+
+mov a,m
+out 11h
+INX H
+call delay
+inr c
+dcr d
+jnz again1
+call delay1
+pop h
+dcr b
+jnz again
+ 
+inx h
+jmp again2
+hlt
+
+delay: push b
+push psw
+
+lxi b,20h
+next: dcx b
+mov a,c
+ora b
+jnz next
+pop psw
+pop b
+ret
+
+delay1: push b
+push psw
+
+lxi b, 8FFFh
+next1: dcx b
+mov a,c
+ora b
+jnz next1
+pop psw
+pop b
+ret
+
+
+hlt

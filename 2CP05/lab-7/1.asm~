@@ -1,0 +1,5 @@
+
+in 00h
+out 00h
+
+hlt

@@ -1,0 +1,32 @@
+
+;<Program title>
+mvi a,00h
+ani 21h
+cpi 21h
+jnz end
+
+display: mvi a,0c0h
+
+end: out 00h
+call delay
+mvi a,30h
+out 00h
+call delay
+jmp end
+
+delay: mvi b,11h
+outer: mvi c,0ffh
+inner: dcr c
+jnz inner
+dcr b
+jnz outer
+ret
+
+
+
+
+
+
+
+
+
