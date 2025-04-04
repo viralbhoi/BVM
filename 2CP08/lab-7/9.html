@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="TIME">
+        00 : 00 : 000
+    </div>
+    <div>
+        <button id="Start">START</button>
+        <button id="Lap">LAP</button>
+        <button id="reset">RESET</button>
+        <div id="lapTiming"></div>
+    </div>
+</div>
+
+
+    <script>
+        let defTime = "00 : 00 : 000";
+        let time = document.getElementById("TIME");
+        let startBtn = document.getElementById("Start");
+        let lapBtn = document.getElementById("Lap");
+        let resetBtn = document.getElementById("reset");
+        let lapTime = document.getElementById("lapTiming")
+        let milisec = 0;
+        let on = false;
+        let timingFunc;
+
+
+
+        startBtn.addEventListener("click", (event)=> {
+            if(on){
+                on = false;
+                clearInterval(timingFunc);
+                startBtn.innerText = "START";
+                // time.innerText = defTime;
+            }else{
+                timingFunc = setInterval(()=>{
+                    milisec++;
+                    setTime(milisec);
+                },1);
+                on = true;
+                startBtn.innerText = "STOP";
+            }
+        })
+
+        lapBtn.addEventListener("click", (event)=> {
+            lapTime.innerHTML += `<p> ${time.innerText} </p>`;
+        })
+
+        resetBtn.addEventListener("click", (event)=> {
+            milisec = 0;
+            on = false;
+            clearInterval(timingFunc);
+            startBtn.innerText = "START";
+            time.innerText = defTime;
+            lapTime.innerHTML ="";
+        })
+
+
+        function setTime(milisec){
+            let min = Math.floor((milisec/60000) % 60);
+            let sec = Math.floor((milisec/1000) % 60);
+            let msec = Math.floor(milisec % 1000);
+            let min_s,sec_s,msec_s;
+
+            if(min < 10){
+                min_s = '0' + min;
+            }else{
+                min_s = "" + min;
+            }
+
+            if(sec < 10){
+                sec_s = '0' + sec;
+            }else{
+                sec_s = "" + sec;
+            }
+
+            if(msec < 10){
+                msec_s = '00' + msec;
+            }else if(msec>=10 && msec <100){
+                msec_s = "0" + msec;
+            }else{
+                msec_s = "" + msec;
+            }
+
+            time.innerText = `${min_s} : ${sec_s} : ${msec_s}`;
+        }
+
+    </script>
+</body>
+</html>

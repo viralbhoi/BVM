@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=0;
+        let b=1;
+        let n = Number(prompt("How many terms You want to print : "));
+        for(let i=1;i<=n;i++){
+            if(i==1){
+                document.writeln("term no. ",i," = ",a,"<br>");
+            }else if(i == 2){
+                document.writeln("term no. ",i," = ",b,"<br>");
+            }else{
+                let temp = a+b;
+                a = b;
+                b = temp;
+                document.writeln("term no. ",i," = ",b,"<br>");
+            }
+        }
+    </script>
+</body>
+</html>

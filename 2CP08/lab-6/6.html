@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("Enter no of elements : "));
+        let a = [];
+        for(let i = 0;i<n;i++){
+            let num = Number(prompt("Enter element : "));
+            console.log(typeof(num))
+            a.push(num);
+        }
+        document.writeln("Sorted in ascending order = ");
+        a.sort(Number);
+        for(let i=0;i<n;i++){
+           document.writeln(a[i], "  ");
+        }
+        document.writeln("<br>Sorted in descending order = ");
+        a.reverse();
+        for(let i=0;i<n;i++){
+           document.writeln(a[i], "  ");
+        }
+    </script>
+</body>
+</html>

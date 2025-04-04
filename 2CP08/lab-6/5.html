@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,4,2,3,5,3,1,4,3,2];
+        document.writeln(" Arr = ");
+        for( a of arr){
+            document.write(a," ");
+        }
+        arr.reverse();
+        document.writeln("<br>");
+        document.writeln("reversed array = ");
+        for( a of arr){
+            document.write(a," ");
+        }
+        arr.sort();
+        document.writeln("<br>");
+        document.writeln("sorted array = ");
+        for( a of arr){
+            document.write(a," ");
+        }
+        document.writeln("<br>");
+        document.writeln(arr.join(" --> "))
+        document.writeln("<br>");
+        document.writeln("Pop last element = ")
+        arr.pop()
+        document.writeln(arr);
+        document.writeln("<br>");
+        document.writeln("push element = ")
+        arr.push(99);
+        document.writeln(arr.join(" "))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="func()"
+  onreset="func()">
+    <form action="" name="frm">
+      <select
+        name="item"
+        id="item"
+        onchange="func()"
+       
+      >
+        <option value="Monitor">Monitor</option>
+        <option value="HDD">HDD</option>
+      </select>
+
+      <select name="prod" id="prod"></select>
+    </form>
+    <script>
+      function func() {
+        let item = {
+          Monitor: ["acer 21", "dell 22"],
+          HDD: ["500GB", "1TB", "2TB"],
+        };
+        let obj = document.getElementById("item");
+
+        let opt = obj.options.selectedIndex;
+        let s = "";
+
+        let tempObj = { 0: "Monitor", 1: "HDD" };
+
+        for (i in item[tempObj[opt]]) {
+          s += "<option>" + item[tempObj[opt]][i] + "</option>";
+        }
+
+        let change = document.getElementById("prod");
+        change.innerHTML = s;
+      }
+    //   func();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>window will Logged out in 30 sec if no activity by user</h1>
+    <p>activity = mousemove, keypress</p>
+    
+    <script>
+        let timingFunc;
+
+        function resetTimer() {
+            clearTimeout(timingFunc);
+            timingFunc = setTimeout(() => {
+                alert("Logged out because you are inactive");
+                window.location.href = "Logout.html";
+            }, 30000);
+        }
+
+        document.addEventListener("mousemove", resetTimer);
+        document.addEventListener("keypress", resetTimer);
+
+        resetTimer();
+    </script>
+
+</body>
+</html>

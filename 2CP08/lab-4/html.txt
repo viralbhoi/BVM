@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Mypage </title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<h1> working with css </h1>
+		<p> this is a random paragraph. this is a random paragraph. this is a random paragraph. this is a random paragraph. this is a random paragraph. this is a random paragraph. </p>
+
+		<table>
+			<tr>
+				<th> roll no. </th>
+				<th> sub-1 </th>
+				<th> sub-2 </th>
+			</tr>
+			<tr>
+				<td> 1001 </td>
+				<td> 45 </td>
+				<td> 38 </td>
+			</tr>
+			<tr>
+				<td> 1002 </td>
+				<td> 35 </td>
+				<td> 39 </td>
+			</tr>
+			<tr>
+				<td> 1003 </td>
+				<td> 40 </td>
+				<td> 40 </td>
+			</tr>
+			<tr>
+				<td> 1004 </td>
+				<td> 49 </td>
+				<td> 32 </td>
+			</tr>
+			<tr>
+				<td> 1005 </td>
+				<td> 30 </td>
+				<td> 32 </td>
+			</tr>
+		</table>
+		
+		<h2> Example of list </h2>
+		<ul>
+			<li> item-1 </li>
+			<li> item-2 </li>
+			<li> item-3 </li>
+			<li> item-4 </li>
+			<li> item-5 </li>
+		</ul>
+
+		<div class = "style">
+			This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, 			aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.
+		</div>
+
+		<h3>
+		<a href="https://www.google.com"> Google </a>
+		<a href="https://www.Youtube.com"> Youtube </a>
+		<a href="https://www.linkedin.com"> LinkedIn </a>
+		<a href="https://www.leetcode.com"> LeetCode </a>
+		<a href="https://www.w3schools.com"> W3schools </a>
+
+	</body>
+</html>

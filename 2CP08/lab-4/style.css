@@ -1,0 +1,74 @@
+body{
+	background-color : red;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 150%;
+}
+
+p{
+	font-weight : bold;
+	font-family : Arial;
+}
+
+.style{
+	text-transform: capitalize;
+	text-decoration-line: underline;
+	text-indent: 1cm;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+li{
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	margin: 1cm;
+	font-size : 22px;
+}
+
+a{
+	padding : 15px;
+	text-decoration : none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover{
+	color : green;
+	background-color : yellow;
+}
+
+
+a:active {
+  color: green;
+}
+
+table{
+	width : 80%;
+	border-collapse: collapse;
+	text-align:center;
+	font-family : Verdana;
+	margin: auto;
+	border: 4px solid black;
+}
+
+td,th{
+	border-bottom: 1px solid #000;
+	padding: 7px;
+}
+
+th{
+	background-color:DodgerBlue; 
+}
+
+tr:nth-child(even) {
+	background-color: hsl(185, 57%, 91%);
+}
+
+tr:nth-child(odd) {
+	background-color: #fff;
+}

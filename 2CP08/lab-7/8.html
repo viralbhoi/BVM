@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Register Yourself</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let mobile = document.getElementById("mobile").value.trim();
+            let error = "";
+
+            for (let i = 0; i < name.length; i++) {
+                let char = name[i];
+                if (!((char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z') || char === ' ')) {
+                    error += "Name should contain only letters and spaces.\n";
+                    break;
+                }
+            }
+
+            if (email.indexOf('@') === -1 || email.indexOf('.') === -1 || email.indexOf('@') > email.lastIndexOf('.')) {
+                error += "Please enter a valid email address.\n";
+            }
+
+            if (password.length < 6) {
+                error += "Password must be at least 6 characters long.\n";
+            }
+
+            if (mobile.length !== 10) {
+                error += "Mobile number must be exactly 10 digits.\n";
+            }
+            for (let i = 0; i < mobile.length; i++) {
+                if (mobile[i] < '0' || mobile[i] > '9') {
+                    error += "Mobile number should contain only digits.\n";
+                    break;
+                }
+            }
+
+            if (error !== "") {
+                alert(error);
+                return false;
+            } else {
+                errorDiv.innerText = ""; 
+                alert("Registration successful!");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>
+		 table using HTML Tags
+		</title>
+	</head>
+	<body>
+<center>
+	<h1>Birla Vishwakarma Mahavidyalaya</h1>
+	<h3>An Autonomous Institution</h3>
+		<form>
+		<table width="80%" border="10px" border-color="black" bgcolor="#91ecfa">
+			<tr>
+				<th colspan="2"> <h1>SEM 4 Registration Form</h1></th>
+			</tr>
+			<tr>
+				<td> Select Acedemic year : </td>
+				<td> 
+					<select name="Year">
+						<option value ="2024-25"> 2024-25 </option>
+						<option value ="2023-24"> 2023-24 </option>
+						<option value ="2022-23"> 2022-23 </option>
+						<option value ="2021-22"> 2021-22 </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> Semester Type : </td>
+				<td> 
+					<select name="type">
+						<option value ="odd"> odd </option>
+						<option value ="even"> even </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> Select Semester : </td>
+				<td>
+					<input type="text" name="fee" value="SEMESTER 4" readonly>  </input>
+				</td>
+			</tr>
+			<tr>
+				<td> Select Date : </td>
+				<td> 
+					<input type="date"></input>
+				</td>
+			</tr>
+			<tr>
+				<td> Enetr Your id : </td>
+				<td> 
+					<input type="text"></input>
+				</td>
+			</tr>
+			<tr>
+				<td> Choose your password : </td>
+				<td> 
+					<input type="password"></input>
+				</td>
+			</tr>
+			<tr>
+				<td> Enetr Your Name : </td>
+				<td> 
+					<input type="text"></input>
+				</td>
+			</tr>
+			<tr>
+				<td> Select your gender : </td>
+				<td> 
+					<input type="radio" name="gender" value="male" checked> Male </input>
+  					<input type="radio" name="gender" value="female"> Female </input>
+				</td>
+			</tr>
+			<tr>
+				<td> Your Address : </td>
+				<td>
+					<textarea name ="address" rows="5" cols="30" placeholder="Enter your address"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td> Subjects: </td>
+				<td>
+					<input type="checkbox" name="sub" value="2CP06"> Data Structure<br> </input>
+					<input type="checkbox" name="sub" value="2BS01"> Differential and ordinary equation<br> </input>
+					<input type="checkbox" name="sub" value="2CP05"> Computer Architecture and organization<br> </input>
+					<input type="checkbox" name="sub" value="2CP07"> Computer Networks<br> </input>
+					<input type="checkbox" name="sub" value="2CP08"> Web Technologies<br> </input>
+				</td>
+			</tr>
+			<tr>
+				<td> Fees : </td>
+				<td>
+					<input type="text" name="fee" value="1050" readonly>  </input>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input type="submit"></input>
+				</th>
+			</tr>
+		</table>
+		</form>
+</center>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<employee_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:noNamespaceSchemaLocation="emp.xsd">
+    
+    <employee employee_number="1">
+        <Name>Amit</Name>
+        <Department>CP</Department>
+        <telephone>9879879879</telephone>
+        <email>abc@gmail.com</email>
+    </employee>
+
+    <employee employee_number="2">
+        <Name>Rahul</Name>
+        <Department>IT</Department>
+        <telephone>9876543210</telephone>
+        <email>rahul@example.com</email>
+    </employee>
+
+</employee_info>

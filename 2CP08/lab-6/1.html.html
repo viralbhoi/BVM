@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a= 2+3;
+        document.writeln("2+3 = ",a," ", typeof(a),"<br>");
+        a = 2 +"MB";
+        document.writeln('2 + "MB" = ',a," ", typeof(a),"<br>");
+        a= "hello" + "bvm";
+        document.writeln('"hello" + "bvm" = ',a," ", typeof(a),"<br>");
+        a = 3 - 2;
+        document.writeln("3-2 = ",a," ", typeof(a),"<br>");
+        a = 3 -"MB";
+        document.writeln('3-"MB" = ',a," ", typeof(a),"<br>");
+        a = 3*2;
+        document.writeln('3*2 = ',a," ", typeof(a),"<br>");
+        a = 5/2;
+        document.writeln('5/2 = ',a," ", typeof(a),"<br>");
+        a = 2/0;
+        document.writeln('2/0 = ',a," ", typeof(a),"<br>");
+        a = 5%2;
+        document.writeln('5%2 = ',a," ", typeof(a),"<br>");
+        a = 2%0;
+        document.writeln('2%0 = ',a," ", typeof(a),"<br>");
+        let x = 1;
+        document.writeln("x = ", x," ", typeof(x),"<br>");
+        x++;
+        document.writeln("x++ =", x," ", typeof(x),"<br>");
+        let y = ++x
+        document.writeln("y = ++x, y=", y," ","x=",x," ", typeof(y),"<br>");
+        y = x++
+        document.writeln("y = x++, y=", y," ","x=",x," ", typeof(y),"<br>");
+        x = 5;
+        document.writeln("x = ", x," ", typeof(x),"<br>");
+        x--;
+        document.writeln("x-- =", x," ", typeof(x),"<br>");
+        y = --x
+        document.writeln("y = --x, y=", y," ","x=",x," ", typeof(y),"<br>");
+        y = x--
+        document.writeln("y = x--, y=", y," ","x=",x," ", typeof(y),"<br>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title> Box model </title>
+		<link rel="stylesheet" href="style3.css">
+	</head>
+
+	<body>
+		
+		<div>
+			<h1> Local Finder </h1>
+		
+			<ul>
+				<li> help user to check their needed product nearby </li>
+				<li> gives experience of comparing prices at comfort of home </li>
+				<li> physical shopping expirence </li>
+			</ul>
+		</div>
+	</body>
+	
+</html>
+		
+		
+		

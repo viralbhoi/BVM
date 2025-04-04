@@ -1,0 +1,38 @@
+body{
+	text-transform: lowercase;
+}
+ol{
+	list-style-type : none;
+}
+
+body> ol{
+	counter-reset : cnt1;
+}
+body> ol> ol{
+	counter-reset : cnt2;
+}
+body> ol> ol> ol {
+	counter-reset : cnt3;
+}
+body> ol> ol> ol> ol{
+	counter-reset : cnt4;
+}
+
+body> ol>li::before{
+	counter-increment : cnt1;
+	content: "Chapter " counter(cnt1)".";
+}
+
+body> ol> ol>li::before{
+	counter-increment : cnt2;
+	content: counter(cnt1)"."counter(cnt2);
+}
+body> ol> ol> ol>li::before {
+	counter-increment : cnt3;
+	content: counter(cnt1)"."counter(cnt2)"."counter(cnt3);
+}
+body> ol> ol> ol> ol>li::before {
+	counter-increment : cnt4;
+	content: counter(cnt1)"."counter(cnt2)"."counter(cnt3)"."counter(cnt4);
+}
+

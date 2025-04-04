@@ -1,0 +1,31 @@
+<HTML>
+	<HEAD>
+		<TITLE> OL STYLING </TITLE>
+		<link rel="stylesheet" href="style1.css">
+	</HEAD>
+
+	<BODY>
+		<p> Title: Web Technologies </p>
+		<p>Table of content </p>
+
+		<OL>
+			<LI> HTML </LI>
+			<LI> CSS </LI>
+			
+			<OL>
+				<LI> INTRODUCTION </LI>
+				<LI> ADDING STYLESHEET </LI>
+				
+				<OL>
+					<LI> EXTERNAL </LI>
+				
+					<OL>
+						<LI> EXTERNAL STYLE SHEETS ARE USEFUL </LI>
+					</OL>
+				</OL>
+				<LI> BROWSER INCOMPATIBILITY </LI>
+			</OL>
+			<LI> XML </LI>
+		</OL>
+	</BODY>
+</HTML>

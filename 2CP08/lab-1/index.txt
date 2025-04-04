@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Resume</title>
+</head>
+
+<body bgcolor="white" text="#000000" vlink="#4b0082" alink="#ff4500">
+    <h1 style="display: inline-block; font-size: 45px; font-family: Arial">
+        <i>Viral Bhoi</i>
+    </h1>
+    <img src="img.jpg" alt="My Picture" height="200px" style="float: right" />
+    <br />
+    <h3 style="display: inline-block">
+        <em>Striving for daily growth and career excellence</em>
+    </h3>
+
+    <hr />
+    <nav>
+        <a href="https://www.linkedin.com/in/viralbhoi" target="_blank" style="font-size: 17px"><b>LinkedIn</b></a>
+        <a href="https://www.github.com/viralbhoi" target="_blank"
+            style="font-size: 17px; padding-left: 25px"><b>GitHub</b></a>
+        <a href="mailto:72viralbhoi@gmail.com" style="font-size: 17px; padding-left: 25px">Email</a>
+        <a href="tel:+917990983960" style="font-size: 17px; padding-left: 25px">Phone</a>
+    </nav>
+
+    <hr />
+
+    <h2 style="font-size: 25px; font-family: Helvetica">Education</h2>
+    <h3 style="font-size: 21px">Birla Vishvakarma Mahavidyalaya</h3>
+    <ul>
+        <li style="font-size: 18px">
+            <strong>BTech in Computer Engineering</strong> <br />
+            Grade: <big>8.35</big>
+        </li>
+    </ul>
+    <h3 style="font-size: 21px">C.V.M. H.S.E.C (R.P.T.P. School)</h3>
+    <ul>
+        <li style="font-size: 18px">
+            H.S.C Gujarat Board (Grade: <big>98.71%ile</big>)
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2 style="font-size: 25px; font-family: Helvetica"><ins>Skills</ins></h2>
+    <ul>
+        <li style="font-size: 18px">
+            <b>Programming Languages</b>: C, C++, JavaScript
+        </li>
+        <li style="font-size: 18px"><b>Web Technologies</b>: HTML, CSS</li>
+        <li style="font-size: 18px"><b>DBMS</b>: PostgreSQL</li>
+    </ul>
+
+    <hr />
+
+    <h2 style="font-size: 25px; font-family: Helvetica">Projects</h2>
+
+    <ul>
+        <li>
+            <h3 style="font-size: 21px">Parcel Management System</h3>
+            <ul>
+                <li style="font-size: 18px">
+                    Helps users track parcels using ProductID or OrderID.
+                </li>
+                <li style="font-size: 18px">Technologies: <i>C</i>.</li>
+            </ul>
+        </li>
+        <li>
+            <h3 style="font-size: 21px">Military Personnel Management System</h3>
+            <ul>
+                <li style="font-size: 18px">
+                    Database system for personnel records, deployments, and weapons.
+                </li>
+                <li style="font-size: 18px">Technologies: PostgreSQL.</li>
+            </ul>
+        </li>
+        <li>
+            <h3 style="font-size: 21px">Business Management System</h3>
+            <ul>
+                <li style="font-size: 18px">
+                    Integrates file handling for admin and consumer modes.
+                </li>
+                <li style="font-size: 18px">Technologies: C++.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2 style="font-size: 25px; font-family: Helvetica">Achievements</h2>
+    <ol>
+        <li style="font-size: 18px">
+            Global rank <b>611</b> in CodeChef Starter Div. 4.
+        </li>
+        <li style="font-size: 18px">Winner of <em>CodeZest</em> held at BVM.</li>
+    </ol>
+
+    <hr />
+
+    <h2 style="font-size: 25px; font-family: Helvetica">
+        Competitive Programming
+    </h2>
+    <ul>
+        <li style="font-size: 18px">
+            <b>CodeChef:</b> Max rating <small>1424</small>
+        </li>
+        <li style="font-size: 18px">
+            <b>CodeForces:</b> Max rating <small>971</small>
+        </li>
+        <li style="font-size: 18px">
+            <b>LeetCode:</b> Max rating <small>1571</small>
+        </li>
+    </ul>
+</body>
+
+</html>
